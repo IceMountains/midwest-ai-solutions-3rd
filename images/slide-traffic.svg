@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="traffic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="#181828"/>
+  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Web Traffic</text>
+  <polyline id="traffic-line" points="80,220 120,180 160,160 200,140 240,120 280,110 320,100" fill="none" stroke="url(#traffic-gradient)" stroke-width="8" stroke-linecap="round" stroke-dasharray="400" stroke-dashoffset="400"/>
+  <text id="traffic-num" x="200" y="150" text-anchor="middle" fill="#ff00ff" font-size="48" font-family="Arial" font-weight="bold">0%</text>
+  <text x="200" y="220" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Increase in visitors</text>
+</svg> 

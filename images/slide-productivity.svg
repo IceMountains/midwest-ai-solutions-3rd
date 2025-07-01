@@ -1,0 +1,14 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="prod-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="#181828"/>
+  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Productivity</text>
+  <rect x="80" y="180" width="240" height="30" rx="15" fill="#222"/>
+  <rect id="productivity-bar" x="80" y="180" width="0" height="30" rx="15" fill="url(#prod-gradient)"/>
+  <text id="productivity-num" x="200" y="150" text-anchor="middle" fill="#00d4ff" font-size="64" font-family="Arial" font-weight="bold">0%</text>
+  <text x="200" y="220" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Increase in output</text>
+</svg> 

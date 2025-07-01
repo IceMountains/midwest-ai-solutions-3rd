@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="slide4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="#181828"/>
+  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Business Growth</text>
+  <g>
+    <rect x="80" y="110" width="240" height="60" rx="12" fill="rgba(0,212,255,0.08)" stroke="url(#slide4-gradient)" stroke-width="2"/>
+    <text x="200" y="140" text-anchor="middle" fill="#00d4ff" font-size="18" font-family="Arial" font-weight="bold">Efficiency</text>
+    <text x="200" y="160" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial">Do more, faster</text>
+  </g>
+  <g>
+    <rect x="80" y="190" width="240" height="60" rx="12" fill="rgba(255,0,255,0.08)" stroke="url(#slide4-gradient)" stroke-width="2"/>
+    <text x="200" y="220" text-anchor="middle" fill="#ff00ff" font-size="18" font-family="Arial" font-weight="bold">Results</text>
+    <text x="200" y="240" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial">Real business impact</text>
+  </g>
+</svg> 

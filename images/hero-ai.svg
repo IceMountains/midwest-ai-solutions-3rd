@@ -1,0 +1,77 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)"/>
+  
+  <!-- Main Title -->
+  <text x="300" y="50" text-anchor="middle" fill="#fff" font-size="24" font-family="Arial" font-weight="bold">Midwest AI Solutions</text>
+  
+  <!-- Central AI Icon -->
+  <g transform="translate(300, 200)">
+    <!-- Brain Icon -->
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#ai-gradient)" stroke-width="4"/>
+    <path d="M-40 -20 Q-50 -10 -50 0 Q-50 10 -40 20" stroke="url(#ai-gradient)" stroke-width="3" fill="none"/>
+    <path d="M-20 -30 Q-30 -20 -30 -10 Q-30 0 -20 10" stroke="url(#ai-gradient)" stroke-width="3" fill="none"/>
+    <path d="M0 -35 Q-10 -25 -10 -15 Q-10 -5 0 5" stroke="url(#ai-gradient)" stroke-width="3" fill="none"/>
+    <path d="M20 -30 Q10 -20 10 -10 Q10 0 20 10" stroke="url(#ai-gradient)" stroke-width="3" fill="none"/>
+    <path d="M40 -20 Q30 -10 30 0 Q30 10 40 20" stroke="url(#ai-gradient)" stroke-width="3" fill="none"/>
+    
+    <!-- Central Core -->
+    <circle cx="0" cy="0" r="20" fill="url(#ai-gradient)"/>
+    <text x="0" y="5" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">AI</text>
+  </g>
+  
+  <!-- Service Labels -->
+  <!-- AI Tooling -->
+  <g transform="translate(150, 120)">
+    <rect width="100" height="60" rx="8" fill="rgba(0, 212, 255, 0.1)" stroke="url(#ai-gradient)" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">AI Tooling</text>
+    <text x="50" y="40" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Chatbots</text>
+    <text x="50" y="52" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Automation</text>
+  </g>
+  
+  <!-- Website Development -->
+  <g transform="translate(350, 120)">
+    <rect width="100" height="60" rx="8" fill="rgba(255, 0, 255, 0.1)" stroke="url(#ai-gradient)" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">Web Development</text>
+    <text x="50" y="40" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Modern Sites</text>
+    <text x="50" y="52" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Responsive</text>
+  </g>
+  
+  <!-- Data Analytics -->
+  <g transform="translate(150, 280)">
+    <rect width="100" height="60" rx="8" fill="rgba(0, 212, 255, 0.1)" stroke="url(#ai-gradient)" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">Data Analytics</text>
+    <text x="50" y="40" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Insights</text>
+    <text x="50" y="52" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Reports</text>
+  </g>
+  
+  <!-- Business Growth -->
+  <g transform="translate(350, 280)">
+    <rect width="100" height="60" rx="8" fill="rgba(255, 0, 255, 0.1)" stroke="url(#ai-gradient)" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">Business Growth</text>
+    <text x="50" y="40" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Efficiency</text>
+    <text x="50" y="52" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">Results</text>
+  </g>
+  
+  <!-- Simple Connection Lines -->
+  <g stroke="url(#ai-gradient)" stroke-width="2" opacity="0.6">
+    <line x1="200" y1="150" x2="240" y2="200"/>
+    <line x1="400" y1="150" x2="360" y2="200"/>
+    <line x1="200" y1="310" x2="240" y2="200"/>
+    <line x1="400" y1="310" x2="360" y2="200"/>
+  </g>
+  
+  <!-- Bottom Tagline -->
+  <text x="300" y="370" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial" font-weight="bold">Transform Your Business With AI</text>
+</svg> 

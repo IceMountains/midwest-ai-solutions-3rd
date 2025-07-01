@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="savings-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="#181828"/>
+  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Price Savings</text>
+  <text id="savings-num" x="200" y="160" text-anchor="middle" fill="url(#savings-gradient)" font-size="64" font-family="Arial" font-weight="bold">$40,000</text>
+  <rect x="100" y="200" width="200" height="30" rx="15" fill="#222"/>
+  <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Annual cost reduction</text>
+</svg> 

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Midwest AI Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00d4ff"/>
+                                    <stop offset="1" stop-color="#ff00ff"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Stylized M with circuit/AI lines -->
+                            <path d="M4 28V8L12 24L20 8V28" stroke="url(#logo-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="24" r="2" fill="#00d4ff"/>
+                            <circle cx="20" cy="8" r="2" fill="#ff00ff"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="logo-text">Midwest AI</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="ai-tools.html" class="nav-link">AI Tools</a></li>
+                <li><a href="website.html" class="nav-link">Website</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="cta-nav-btn">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Our Story</span>
+                    <span class="title-line highlight">Midwest Innovation</span>
+                </h1>
+                <p class="hero-subtitle">
+                    From the heart of the Midwest, we're bringing cutting-edge AI technology to businesses that deserve world-class solutions. Our mission is to democratize AI and make powerful technology accessible to companies of all sizes.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Meet Our Team</button>
+                    <button class="btn btn-secondary">Our Mission</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-slider">
+                    <div class="hero-slide active" style="position: relative;">
+                        <span id="productivity-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
+                            <svg width="32" height="32" style="margin-right: 10px;" viewBox="0 0 32 32"><polygon points="16,6 26,22 6,22" fill="url(#prod-gradient)"/><defs><linearGradient id="prod-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#ff00ff"/></linearGradient></defs></svg>
+                            <span id="productivity-number">0%</span>
+                        </span>
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="prod-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" stop-color="#00d4ff"/>
+                              <stop offset="100%" stop-color="#ff00ff"/>
+                            </linearGradient>
+                          </defs>
+                          <rect width="400" height="300" rx="24" fill="#181828"/>
+                          <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Productivity</text>
+                          <rect x="80" y="180" width="240" height="30" rx="15" fill="#222"/>
+                          <rect id="productivity-bar" x="80" y="180" width="0" height="30" rx="15" fill="url(#prod-gradient)"/>
+                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Increase in output</text>
+                        </svg>
+                    </div>
+                    <div class="hero-slide">
+                        <span id="savings-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
+                            <svg width="32" height="32" style="margin-right: 10px;" viewBox="0 0 32 32"><polygon points="16,6 26,22 6,22" fill="url(#savings-gradient)"/><defs><linearGradient id="savings-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#ff00ff"/></linearGradient></defs></svg>
+                            <span id="savings-num">$0</span>
+                        </span>
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="savings-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" stop-color="#00d4ff"/>
+                              <stop offset="100%" stop-color="#ff00ff"/>
+                            </linearGradient>
+                          </defs>
+                          <rect width="400" height="300" rx="24" fill="#181828"/>
+                          <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Price Savings</text>
+                          <rect x="100" y="200" width="200" height="30" rx="15" fill="#222"/>
+                          <rect id="savings-bar" x="100" y="200" width="0" height="30" rx="15" fill="url(#savings-gradient)"/>
+                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Annual cost reduction</text>
+                        </svg>
+                    </div>
+                    <div class="hero-slide">
+                        <span id="efficiency-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
+                            <svg width="32" height="32" style="margin-right: 10px;" viewBox="0 0 32 32"><polygon points="16,6 26,22 6,22" fill="url(#efficiency-gradient)"/><defs><linearGradient id="efficiency-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#ff00ff"/></linearGradient></defs></svg>
+                            <span id="efficiency-num">0%</span>
+                        </span>
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="efficiency-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" stop-color="#00d4ff"/>
+                              <stop offset="100%" stop-color="#ff00ff"/>
+                            </linearGradient>
+                          </defs>
+                          <rect width="400" height="300" rx="24" fill="#181828"/>
+                          <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Efficiency</text>
+                          <rect x="100" y="200" width="200" height="30" rx="15" fill="#222"/>
+                          <rect id="efficiency-bar" x="100" y="200" width="0" height="30" rx="15" fill="url(#efficiency-gradient)"/>
+                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Process improvement</text>
+                        </svg>
+                    </div>
+                    <div class="hero-slide">
+                        <span id="traffic-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
+                            <svg width="32" height="32" style="margin-right: 10px;" viewBox="0 0 32 32"><polygon points="16,6 26,22 6,22" fill="url(#traffic-gradient)"/><defs><linearGradient id="traffic-gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#ff00ff"/></linearGradient></defs></svg>
+                            <span id="traffic-num">0%</span>
+                        </span>
+                        <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="traffic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" stop-color="#00d4ff"/>
+                              <stop offset="100%" stop-color="#ff00ff"/>
+                            </linearGradient>
+                          </defs>
+                          <rect width="400" height="300" rx="24" fill="#181828"/>
+                          <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Web Traffic</text>
+                          <rect x="100" y="180" width="200" height="30" rx="15" fill="#222"/>
+                          <rect id="traffic-bar" x="100" y="180" width="0" height="30" rx="15" fill="url(#traffic-gradient)"/>
+                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Monthly visitors growth</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Glowing line effect -->
+        <div class="glow-line"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-flex">
+            <div class="about-text">
+                <h2>About <span class="gradient-text">Midwest AI Solutions</span></h2>
+                <p>Founded in the heart of the Midwest, we're a team of passionate technologists, designers, and business strategists who believe that cutting-edge AI technology shouldn't be limited to Silicon Valley giants. Our mission is to democratize AI and make powerful, intelligent solutions accessible to businesses of all sizes.</p>
+                <p>With years of combined experience in artificial intelligence, web development, and business operations, we bridge the gap between complex AI systems and practical, user-friendly applications that drive real business results. We understand that every business is unique, which is why we create custom solutions tailored to your specific needs and goals.</p>
+                <p>From small family businesses to growing enterprises, we've helped companies across the Midwest and beyond leverage the power of AI to streamline operations, enhance customer experiences, and drive sustainable growth.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+            <img src="images/ohio-tech.png" alt="Modern Ohio Tech Outline" class="ohio-tech-img" />
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Innovation/Lightbulb SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M16 4C12.6863 4 10 6.68629 10 10C10 12.5 11.5 14.5 13 16V18C13 19.1046 13.8954 20 15 20H17C18.1046 20 19 19.1046 19 18V16C20.5 14.5 22 12.5 22 10C22 6.68629 19.3137 4 16 4Z" stroke="url(#icon-gradient1)" stroke-width="2" fill="none"/>
+                                <path d="M12 22H20" stroke="url(#icon-gradient1)" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M14 24H18" stroke="url(#icon-gradient1)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Innovation First</h3>
+                    <p class="feature-description">
+                        We stay at the forefront of technology, constantly exploring new AI capabilities and emerging trends to deliver cutting-edge solutions.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Trust/Shield SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M16 4L28 10V18C28 24.6274 22.6274 30 16 30C9.37258 30 4 24.6274 4 18V10L16 4Z" stroke="url(#icon-gradient2)" stroke-width="2" fill="none"/>
+                                <path d="M12 16L14 18L20 12" stroke="url(#icon-gradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Trust & Reliability</h3>
+                    <p class="feature-description">
+                        We build lasting partnerships based on transparency, honest communication, and delivering on our promises every time.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Community/People SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient3" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="16" cy="12" r="4" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                                <path d="M8 24C8 20.6863 10.6863 18 14 18H18C21.3137 18 24 20.6863 24 24" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                                <circle cx="24" cy="8" r="3" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                                <path d="M20 16C20 13.7909 21.7909 12 24 12" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                                <circle cx="8" cy="8" r="3" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                                <path d="M12 16C12 13.7909 10.2091 12 8 12" stroke="url(#icon-gradient3)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Community Focus</h3>
+                    <p class="feature-description">
+                        We're proud to be part of the Midwest business community and committed to helping local businesses thrive in the digital age.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Quality/Star SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient4" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M16 4L19.5 11.5L28 12.5L22 18.5L24 27L16 22.5L8 27L10 18.5L4 12.5L12.5 11.5L16 4Z" stroke="url(#icon-gradient4)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Excellence</h3>
+                    <p class="feature-description">
+                        We never compromise on quality. Every solution we deliver is crafted with attention to detail and built to exceed expectations.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Growth/Chart SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient5" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M4 28L12 20L20 24L28 12" stroke="url(#icon-gradient5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="20" r="2" fill="url(#icon-gradient5)"/>
+                                <circle cx="20" cy="24" r="2" fill="url(#icon-gradient5)"/>
+                                <circle cx="28" cy="12" r="2" fill="url(#icon-gradient5)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Sustainable Growth</h3>
+                    <p class="feature-description">
+                        We design solutions that scale with your business, ensuring long-term success and measurable return on investment.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-placeholder">
+                            <!-- Support/Heart SVG -->
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="icon-gradient6" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M16 26C16 26 28 18 28 12C28 8.68629 25.3137 6 22 6C19.7909 6 17.7909 7.20914 16 9.20914C14.2091 7.20914 12.2091 6 10 6C6.68629 6 4 8.68629 4 12C4 18 16 26 16 26Z" stroke="url(#icon-gradient6)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Client Success</h3>
+                    <p class="feature-description">
+                        Your success is our success. We're committed to your growth and provide ongoing support to ensure you achieve your goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Work Together?</h2>
+                <p class="section-subtitle">Let's discuss how we can help transform your business</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Envelope/Mail SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="4" y="7" width="20" height="14" rx="3" stroke="url(#contact-gradient1)" stroke-width="2" fill="none"/>
+                                <path d="M6 9L14 16L22 9" stroke="url(#contact-gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@midwestai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Phone SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M7 5C7 4.44772 7.44772 4 8 4H11C11.5523 4 12 4.44772 12 5V7C12 7.55228 11.5523 8 11 8H9C8.44772 8 8 7.55228 8 7V5Z" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                                <path d="M16 20C18.2091 20 20 18.2091 20 16V12C20 9.79086 18.2091 8 16 8H12C9.79086 8 8 9.79086 8 12V16C8 18.2091 9.79086 20 12 20H16Z" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                                <path d="M20 21V23C20 23.5523 19.5523 24 19 24H9C8.44772 24 8 23.5523 8 23V21" stroke="url(#contact-gradient2)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Map Pin/Location SVG -->
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="contact-gradient3" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00d4ff"/>
+                                        <stop offset="1" stop-color="#ff00ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M14 24C14 24 22 16.5 22 10.5C22 6.35786 18.6421 3 14.5 3C10.3579 3 7 6.35786 7 10.5C7 16.5 14 24 14 24Z" stroke="url(#contact-gradient3)" stroke-width="2" fill="none"/>
+                                <circle cx="14.5" cy="10.5" r="3" fill="url(#contact-gradient3)"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Midwest Region, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">Select Service</option>
+                                <option value="ai-tooling">AI Tooling & Automation</option>
+                                <option value="web-development">Website Development</option>
+                                <option value="data-analytics">Data Analytics</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" class="form-input" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Midwest AI Solutions</h4>
+                    <p>Empowering businesses with intelligent solutions and cutting-edge technology to drive growth and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="ai-tools.html">AI Tooling</a></li>
+                        <li><a href="website.html">Web Development</a></li>
+                        <li><a href="#services">Data Analytics</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Midwest AI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

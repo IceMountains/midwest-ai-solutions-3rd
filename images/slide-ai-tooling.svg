@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="slide1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="#181828"/>
+  <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">AI Tooling</text>
+  <g>
+    <rect x="80" y="100" width="240" height="60" rx="12" fill="rgba(0,212,255,0.08)" stroke="url(#slide1-gradient)" stroke-width="2"/>
+    <text x="200" y="130" text-anchor="middle" fill="#00d4ff" font-size="18" font-family="Arial" font-weight="bold">Chatbots</text>
+    <text x="200" y="150" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial">Automate customer support</text>
+  </g>
+  <g>
+    <rect x="80" y="180" width="240" height="60" rx="12" fill="rgba(255,0,255,0.08)" stroke="url(#slide1-gradient)" stroke-width="2"/>
+    <text x="200" y="210" text-anchor="middle" fill="#ff00ff" font-size="18" font-family="Arial" font-weight="bold">Automation</text>
+    <text x="200" y="230" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial">Streamline business tasks</text>
+  </g>
+</svg> 
