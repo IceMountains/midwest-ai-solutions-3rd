@@ -756,6 +756,9 @@ textarea.form-input {
         max-width: 95vw;
         height: auto;
     }
+    .hero {
+        margin-top: 80px;
+    }
 }
 
 @media (max-width: 480px) {
