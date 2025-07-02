@@ -34,18 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = link.getAttribute('href');
-            closeMobileMenu();
-            // If it's an in-page anchor link, scroll smoothly
+            // For anchor links, close menu and scroll
             if (href && href.startsWith('#')) {
                 e.preventDefault();
+                closeMobileMenu();
                 const target = document.querySelector(href);
                 if (target) {
                     setTimeout(() => {
                         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }, 200); // Wait for menu to close
                 }
+            } else {
+                // For external/page links, just close menu and let navigation happen
+                closeMobileMenu();
             }
-            // For external/page links, allow default navigation
         });
     });
 
@@ -82,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add touch feedback for mobile
-    const touchElements = document.querySelectorAll('.feature-card, .btn, .mobile-nav-link');
+    const touchElements = document.querySelectorAll('.feature-card, .btn');
     touchElements.forEach(element => {
         element.addEventListener('touchstart', function() {
             this.style.transform = 'scale(0.98)';

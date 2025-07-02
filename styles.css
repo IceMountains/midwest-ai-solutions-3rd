@@ -674,7 +674,7 @@ textarea.form-input {
         overflow-x: hidden;
     }
     .hero {
-        margin-top: 56px;
+        margin-top: 80px;
         padding: 0;
     }
     .hero-slider {
@@ -687,7 +687,7 @@ textarea.form-input {
     .hero-slide {
         width: 100%;
         max-width: 100%;
-        margin: 0 auto 24px auto;
+        margin: 0 auto 40px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -728,7 +728,7 @@ textarea.form-input {
     .hero-slide svg {
         margin: 0 auto;
         display: block;
-        max-width: 95vw;
+        max-width: 100%;
         height: auto;
     }
 }
