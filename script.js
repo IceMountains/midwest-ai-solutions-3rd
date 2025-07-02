@@ -32,7 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close menu when clicking on nav links
     mobileNavLinks.forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
+        link.addEventListener('click', function(e) {
+            const href = link.getAttribute('href');
+            closeMobileMenu();
+            // If it's an in-page anchor link, scroll smoothly
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 200); // Wait for menu to close
+                }
+            }
+            // For external/page links, allow default navigation
+        });
     });
 
     // Close menu when clicking outside
