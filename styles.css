@@ -757,7 +757,7 @@ textarea.form-input {
         height: auto;
     }
     .hero {
-        margin-top: 80px;
+        margin-top: 56px;
     }
 }
 
@@ -1522,9 +1522,20 @@ html {
 }
 @media (max-width: 768px) {
     .hero-slide-desc {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-top: 10px;
         margin-bottom: 6px;
         padding: 0 10px;
+    }
+}
+
+@keyframes heroSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 } 
