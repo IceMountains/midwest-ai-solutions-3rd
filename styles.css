@@ -731,6 +731,10 @@ textarea.form-input {
         max-width: 100%;
         height: auto;
     }
+    .hero-visual,
+    .hero-slider {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
