@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Midwest AI Solutions - AI Tooling & Website Development</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,8 +40,50 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="#contact" class="cta-nav-btn">Get Started</a></li>
             </ul>
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+                <div class="mobile-logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="mobile-logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00d4ff"/>
+                                    <stop offset="1" stop-color="#ff00ff"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M4 28V8L12 24L20 8V28" stroke="url(#mobile-logo-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="24" r="2" fill="#00d4ff"/>
+                            <circle cx="20" cy="8" r="2" fill="#ff00ff"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">Midwest AI</div>
+                </div>
+                <div class="mobile-close-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="mobile-nav-menu">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="ai-tools.html" class="mobile-nav-link">AI Tools</a></li>
+                <li><a href="website.html" class="mobile-nav-link">Website</a></li>
+                <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#contact" class="mobile-cta-btn">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -77,8 +119,8 @@
                           <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Productivity</text>
                           <rect x="80" y="180" width="240" height="30" rx="15" fill="#222"/>
                           <rect id="productivity-bar" x="80" y="180" width="0" height="30" rx="15" fill="url(#prod-gradient)"/>
-                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Increase in output</text>
                         </svg>
+                        <div class="hero-slide-desc">Increase in output</div>
                     </div>
                     <div class="hero-slide">
                         <span id="savings-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
@@ -96,8 +138,8 @@
                           <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Price Savings</text>
                           <rect x="100" y="200" width="200" height="30" rx="15" fill="#222"/>
                           <rect id="savings-bar" x="100" y="200" width="0" height="30" rx="15" fill="url(#savings-gradient)"/>
-                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Annual cost reduction</text>
                         </svg>
+                        <div class="hero-slide-desc">Annual cost reduction</div>
                     </div>
                     <div class="hero-slide">
                         <span id="efficiency-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
@@ -115,8 +157,8 @@
                           <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Efficiency</text>
                           <rect x="100" y="200" width="200" height="30" rx="15" fill="#222"/>
                           <rect id="efficiency-bar" x="100" y="200" width="0" height="30" rx="15" fill="url(#efficiency-gradient)"/>
-                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Process improvement</text>
                         </svg>
+                        <div class="hero-slide-desc">Process improvement</div>
                     </div>
                     <div class="hero-slide">
                         <span id="traffic-num-html" style="position: absolute; left: 120px; top: 80px; font-size: 64px; font-family: Arial, sans-serif; font-weight: bold; color: #00d4ff; z-index: 2; display: flex; align-items: center;">
@@ -134,8 +176,8 @@
                           <text x="200" y="60" text-anchor="middle" fill="#fff" font-size="28" font-family="Arial" font-weight="bold">Web Traffic</text>
                           <rect x="100" y="180" width="200" height="30" rx="15" fill="#222"/>
                           <rect id="traffic-bar" x="100" y="180" width="0" height="30" rx="15" fill="url(#traffic-gradient)"/>
-                          <text x="200" y="250" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial">Monthly visitors growth</text>
                         </svg>
+                        <div class="hero-slide-desc">Monthly visitors growth</div>
                     </div>
                 </div>
             </div>

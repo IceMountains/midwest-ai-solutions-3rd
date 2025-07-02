@@ -1,4 +1,120 @@
 alert('script.js loaded!');
+
+// Mobile Navigation Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+    const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+        mobileMenuBtn.classList.toggle('active');
+        mobileNavOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileNavOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Close mobile menu
+    function closeMobileMenu() {
+        mobileMenuBtn.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Event listeners
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+
+    if (mobileCloseBtn) {
+        mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close menu when clicking on nav links
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close menu when clicking outside
+    mobileNavOverlay.addEventListener('click', (e) => {
+        if (e.target === mobileNavOverlay) {
+            closeMobileMenu();
+        }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileNavOverlay.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && mobileNavOverlay.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+});
+
+// Mobile touch optimizations
+document.addEventListener('DOMContentLoaded', () => {
+    // Prevent zoom on double tap for buttons
+    const buttons = document.querySelectorAll('.btn, .mobile-nav-link, .mobile-cta-btn');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+        }, { passive: false });
+    });
+
+    // Add touch feedback for mobile
+    const touchElements = document.querySelectorAll('.feature-card, .btn, .mobile-nav-link');
+    touchElements.forEach(element => {
+        element.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+        });
+        
+        element.addEventListener('touchend', function() {
+            this.style.transform = '';
+        });
+    });
+
+    // Mobile hero slider optimizations
+    const heroSlider = document.querySelector('.hero-slider');
+    if (heroSlider && window.innerWidth <= 768) {
+        // Add touch/swipe support for mobile slider
+        let startX = 0;
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const totalSlides = slides.length;
+
+        heroSlider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        heroSlider.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            const threshold = 50;
+
+            if (Math.abs(diffX) > threshold) {
+                if (diffX > 0 && currentSlide < totalSlides - 1) {
+                    // Swipe left - next slide
+                    currentSlide++;
+                } else if (diffX < 0 && currentSlide > 0) {
+                    // Swipe right - previous slide
+                    currentSlide--;
+                }
+                
+                // Update active slide
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === currentSlide);
+                });
+            }
+        });
+    }
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -121,50 +237,7 @@ function typeWriter(element, text, speed = 100) {
 //     }
 // });
 
-// Mobile menu toggle (if you want to add a mobile menu later)
-function createMobileMenu() {
-    const navbar = document.querySelector('.navbar');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    // Create hamburger button
-    const hamburger = document.createElement('button');
-    hamburger.className = 'hamburger';
-    hamburger.innerHTML = '☰';
-    hamburger.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        padding: 0.5rem;
-    `;
-    
-    // Add hamburger to navbar
-    navbar.querySelector('.nav-container').appendChild(hamburger);
-    
-    // Mobile menu functionality
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-    
-    // Show hamburger on mobile
-    function checkMobile() {
-        if (window.innerWidth <= 768) {
-            hamburger.style.display = 'block';
-            navMenu.style.display = 'none';
-        } else {
-            hamburger.style.display = 'none';
-            navMenu.style.display = 'flex';
-        }
-    }
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-}
-
-// Initialize mobile menu
-createMobileMenu();
+// Mobile menu functionality is now handled by the new mobile navigation system above
 
 // Add some particle effects (optional)
 function createParticles() {
