@@ -671,106 +671,65 @@ textarea.form-input {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden !important;
+        overflow-x: hidden;
+    }
+    .hero {
+        margin-top: 56px;
+        padding: 0;
     }
     .hero-slider {
-        display: block !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        overflow-x: hidden !important;
-        margin: 0 auto !important;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+        display: block;
     }
     .hero-slide {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        position: relative !important;
-        min-height: 220px !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        margin: 0 auto 24px auto !important;
-        background: none !important;
-        animation: heroSlideUp 0.7s cubic-bezier(0.4,0,0.2,1) !important;
-        box-sizing: border-box !important;
-    }
-    
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-image-container {
-        height: 300px;
-        margin-top: 2rem;
-    }
-    
-    .hero-image {
-        border-radius: 8px;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .nav-menu {
-        display: none;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .logo-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 16px;
-    }
-    .logo-icon svg {
-        width: 32px;
-        height: 32px;
-    }
-    .logo-text {
-        font-size: 1.3rem;
-    }
-    .logo-subtitle {
-        font-size: 0.6rem;
-    }
-    .hero-slide img {
-        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 24px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 220px;
+        background: none;
+        box-sizing: border-box;
     }
     #productivity-num-html,
     #savings-num-html,
     #efficiency-num-html,
     #traffic-num-html {
-        position: static !important;
-        left: unset !important;
-        top: unset !important;
-        transform: none !important;
+        position: static;
+        left: unset;
+        top: unset;
+        transform: none;
         margin-bottom: 8px;
-        font-size: 2.2rem !important;
-        display: flex !important;
+        font-size: 2.2rem;
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         text-align: center;
     }
+    .hero-slide-desc {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        opacity: 0.85;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+    }
     .hero-slide svg {
-        margin: 0 auto !important;
+        margin: 0 auto;
         display: block;
         max-width: 95vw;
         height: auto;
-    }
-    .hero {
-        margin-top: 56px;
     }
 }
 
