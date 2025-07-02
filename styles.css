@@ -1510,4 +1510,13 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.mobile-nav-overlay,
+.mobile-nav-content,
+.mobile-nav-menu,
+.mobile-nav-link,
+.mobile-cta-btn {
+    pointer-events: auto !important;
+    z-index: 9999 !important;
 } 
